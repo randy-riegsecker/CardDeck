@@ -1,5 +1,3 @@
-import java.net.StandardSocketOptions;
-
 public class CardDeck {
 
     public static void main(String[] args) {
@@ -8,19 +6,18 @@ public class CardDeck {
 
         // Generate a random order for 52 integers (0-51) to represent
         // a standard deck of 52 playing cards.
-
         Randomizer cardDeck = new Randomizer(52);
 
         // Print cards in order
         System.out.println("Card Deck In Order");
         for (index = 0; index < 52; ++index) {
-            playingCardValue(index+1);
+            playingCardValue(index + 1);
         }
 
+        // Print cards in the random order
         System.out.println("\nRandom Card Deck Order");
-        // Print cards in random order
         for (index = 0; index < 52; ++index) {
-            playingCardValue(cardDeck.getInt(index)+1);
+            playingCardValue(cardDeck.getInt(index) + 1);
         }
     }
 
