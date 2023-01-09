@@ -12,7 +12,7 @@ The code is written in Java and the application was developed using IntelliJ Ide
 
 A class that creates a random sized array of integers of size passed.  This is a variant of the Fisher-Yates shuffle for excellent randomizing.  It avoids the negative effects of over-shuffling.
 
-### To Instantiate
+## To Instantiate
 ```
 Randomizer n = new Randomizer(sizePassed);
 ```
