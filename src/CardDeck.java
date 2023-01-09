@@ -1,5 +1,11 @@
 public class CardDeck {
 
+    /*
+    CardDeck - shuffles an array of 52 playing cards
+    Author: Randy Riegsecker
+    Date: 2022/12/14
+    */
+
     public static void main(String[] args) {
 
         int index; // Temporary variable
