@@ -24,7 +24,7 @@ For example, if {sizePassed} is 10, the integer range is from 0-9.
 public class Randomizer {
 
     // Create a dynamic list
-    ArrayList<Integer> numberList = new ArrayList<Integer>();
+    private ArrayList<Integer> numberList = new ArrayList<Integer>();
 
     int size;   // size of the ArrayList, i.e. size 15 will shuffle integers 0-14
     private int counter = 0;  // Temporary use
@@ -47,7 +47,7 @@ public class Randomizer {
     }
 
     // Initially fill the ArrayList with integers in order (0 to size-1).
-    public void fillNumberList() {
+    private void fillNumberList() {
         for (int j = 0; j < size; j++) {
             numberList.add(j);
         }
