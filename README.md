@@ -2,9 +2,9 @@
 This is an application that uses a the modified Fisher-Yates algorithm to shuffle a deck of cards stored in an integer array, and then it displays the deck of 52 playing cards on the screen.
 
 ## Shuffling Algorithm
-You might think that using Random or SecureRandom would give you a good "randomness" you'd expect when shuffling cards, but it's not generally true for a couple reasons.  These classes actually generate a stream of pseudorandom numbers and areny't truly random.  And secondly and more importantly, you often end up over-shuffling the same positions or missing some positions entirely.  Fisher-Yates solves this problem by making sure all the cards participate in the shuffling.
+Using Random or SecureRandom to randomize doesn't give you a good "randomness" you expect when shuffling cards. These classes actually generate a stream of pseudorandom numbers, and aren't truly random. Often you end up over-shuffling the same positions or missing some entirely. Fisher-Yates solves this problem by making sure all the cards participate in the shuffling.
 
-I've developed a reusable **Randomizer** class based on the the Fisher-Yates algorithm with several methods that can be used if you need to perform a good shuffle.
+I've developed a reusable **Randomizer** class based on the the Fisher-Yates algorithm with several methods that can be used if you need to perform a good shuffle.  This code uses the the modified Fisher-Yates algorithm to shuffle the deck of cards, and then it displays the deck of 52 playing cards.
 
 The code is written in Java and the application was developed using IntelliJ Idea Community Edition.
 
@@ -21,6 +21,14 @@ sizePassed = Length of array to randomize (integer)
 Integer range starts at 0 and ends at sizePassed-1
 
 For example, if {sizePassed} is 10, the integer range is from 0-9.
+
+## Methods
+
+**int nextInt()** - Return the integer value in the current position from the ArrayList and increment the position; when the end of the array is reached, it automatically reshuffles the array and returns the first element of the reshuffled array.
+
+**shuffleNumberList()** - Force shuffle of the ArrayList
+
+
 
 ## Output
 
