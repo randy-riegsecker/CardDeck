@@ -2,7 +2,7 @@
 This is an application that uses a the modified Fisher-Yates algorithm to shuffle a deck of cards stored in an integer array, and then it displays the deck of 52 playing cards on the screen.
 
 ## Shuffling Algorithm
-You might think that using Random or SecureRandom would give you a good "randomness" you'd expect when shuffling cards, but it's not generally true for a couple reasons.  First, these classes actually generate a stream of pseudorandom numbers and areny't truly random.  And second and more importantly, you often end up over-shuffling the same positions or missing some positions entirely.  Fisher-Yates solves this problem by making sure all the cards participate in the shuffling.
+You might think that using Random or SecureRandom would give you a good "randomness" you'd expect when shuffling cards, but it's not generally true for a couple reasons.  These classes actually generate a stream of pseudorandom numbers and areny't truly random.  And secondly and more importantly, you often end up over-shuffling the same positions or missing some positions entirely.  Fisher-Yates solves this problem by making sure all the cards participate in the shuffling.
 
 I've developed a reusable **Randomizer** class based on the the Fisher-Yates algorithm with several methods that can be used if you need to perform a good shuffle.
 
