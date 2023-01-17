@@ -23,15 +23,9 @@ Integer range starts at 0 and ends at sizePassed-1
 For example, if {sizePassed} is 10, the integer range is from 0-9.
 
 ## Methods
-
 **int nextInt()** - Return the integer value in the current position from the ArrayList and increment the position; when the end of the array is reached, it automatically reshuffles the array and returns the first element of the reshuffled array.
 
-**shuffleNumberList()** - Force shuffle of the ArrayList
-
-
-
 ## Output
-
 ```
 Card Deck In Order
 Ace of Clubs
