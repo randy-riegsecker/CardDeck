@@ -1,5 +1,5 @@
 # CardDeck
-This is an application that uses a the modified Fisher-Yates algorithm to shuffle a deck of cards stored in an integer array, and then it displays the deck of 52 playing cards on the screen.
+**CardDeck** is an application that uses a the modified Fisher-Yates algorithm to shuffle a deck of cards stored in an integer array, and then it displays the deck of 52 playing cards on the screen.
 
 ## Shuffling Algorithm
 At first glance, you'd think using Random or SecureRandom classes would work well to randomly shuffle an array.  In reality, they don't give you the good "randomness" you expect when shuffling cards. These classes actually generate a stream of pseudorandom numbers, whoich are not truly random.  Frequently, you'd end up over-shuffling the same positions or missing some entirely. Fisher-Yates solves this problem by making sure all the cards participate in the shuffling.
