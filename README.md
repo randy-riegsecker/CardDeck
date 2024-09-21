@@ -10,7 +10,7 @@ The code is written in Java and the application was developed using IntelliJ Ide
 
 ## Randomizer Class
 
-A class that creates a random sized array of integers of size passed.  This is a variant of the Fisher-Yates shuffle for excellent randomizing.  It avoids the negative effects of over-shuffling.
+A class that creates a random sized array of integers of size passed.  This is based on a variant of the Fisher-Yates shuffle, and avoids the negative effects of over-shuffling.
 
 ## To Instantiate
 ```
@@ -18,9 +18,7 @@ Randomizer n = new Randomizer(sizePassed);
 ```
 sizePassed = Length of array to randomize (integer)
 
-Integer range starts at 0 and ends at sizePassed-1
-
-For example, if {sizePassed} is 10, the integer range is from 0-9.
+Integer range starts at 0 and ends at {sizePassed-1}.  For example, if {sizePassed} is 10, the integer range is from 0-9.
 
 ## Methods
 **int nextInt()** - Return the integer value in the current position from the ArrayList and increment the position; when the end of the array is reached, it automatically reshuffles the array and returns the first element of the reshuffled array.
